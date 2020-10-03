@@ -25,7 +25,6 @@ class ViewController: UIViewController {
             mainView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
             mainView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
         ])
-        view.isUserInteractionEnabled = true
     }
 
 }
@@ -65,7 +64,6 @@ class ExampleContainerView: UIView {
     }
     
     private func initUI() {
-        isUserInteractionEnabled = true
         addSubview(label)
         label.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
